@@ -40,7 +40,12 @@ var Dog = function(options) {
   var options = options || {};
   this.status = options.status || 'normal';
   this.color = options.color;
-  this.hungry = (options.hungry === undefined) ? true : options.hungry;
+  // this.hungry = (options.hungry === undefined) ? true : options.hungry;
+  if (options.hungry === undefined) {
+    this.hungry = true;
+  } else {
+    this.hungry = options.hungry;
+  };
 };
 
 var Human = function(options) {
