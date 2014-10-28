@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## Constructor Creation
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+# Used JavaScript Constructors to pass a series of testing methods

@@ -50,14 +50,13 @@ var Dog = function(options) {
 
 var Human = function(options) {
   var options = options || {};
-  // this.cool = options.hungry || true;
   this.pet = function(dogPetted) {
     dogPetted.status = 'happy'
   };
   this.feed = function(dogFed) {
     dogFed.hungry = false;
   };
-  this.cool = options.cool || false;
+  this.cool = (options.cool === undefined) ? false : options.cool;
 };
 
 //        __
